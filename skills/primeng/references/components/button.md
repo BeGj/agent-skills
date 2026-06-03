@@ -26,6 +26,44 @@ import { ButtonModule } from "primeng/button";
 export class ButtonBasicDemo {}
 ```
 
+## Directive usage (`pButton`)
+
+Besides the `<p-button>` component, PrimeNG ships a **`pButton` directive** that applies
+button styling to a native `<button>` **or `<a>` element**. Use it when you need a real
+anchor — most commonly with `routerLink` — or any native element semantics. Label and icon
+are projected with the `pButtonLabel` and `pButtonIcon` helper directives (not the `label`/
+`icon` inputs).
+
+```html
+<!-- native button -->
+<button pButton>
+  <i class="pi pi-check" pButtonIcon></i>
+  <span pButtonLabel>Save</span>
+</button>
+
+<!-- anchor styled as a button -->
+<a href="https://angular.dev" pButton target="_blank" rel="noopener noreferrer">
+  <span pButtonLabel>External</span>
+</a>
+
+<!-- router link styled as a button (very common) -->
+<a routerLink="/dashboard" pButton>
+  <span pButtonLabel>Dashboard</span>
+</a>
+```
+
+All the styling inputs below (e.g. `severity`, `outlined`, `rounded`, `size`) work as
+attributes on the directive too, e.g. `<a routerLink="/" pButton severity="secondary" outlined>`.
+
+**Gotchas:**
+
+- On a native element use the **native DOM events** — `(click)`, `(focus)`, `(blur)` — **not**
+  the component's `(onClick)`/`(onFocus)`/`(onBlur)` outputs (those are for `<p-button>`).
+- For `routerLink`, import Angular's `RouterLink` into the component's `imports` alongside
+  `ButtonModule`.
+- Prefer `<p-button>` for the simple `label`/`icon` case; prefer the `pButton` directive for
+  anchors/`routerLink` and when you need a genuine native element.
+
 ## Inputs
 
 | Name          | Type                                                                                          | Default   | Description                                                                           |

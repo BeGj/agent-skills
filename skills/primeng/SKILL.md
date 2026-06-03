@@ -91,7 +91,7 @@ and a link to the full API). Open the one you need:
 
 ### Button
 
-- **Button** (`p-button`) — Button is an extension to standard button element with icons and theming [button](references/components/button.md)
+- **Button** (`p-button` / `pButton` directive) — extension to the standard button with icons and theming; the `pButton` directive also styles native `<button>` and `<a routerLink>` elements [button](references/components/button.md)
 - **Speed Dial** (`p-speeddial`) — SpeedDial is a floating button with a popup menu [speeddial](references/components/speeddial.md)
 - **SplitButton** (`p-splitbutton`) — SplitButton groups a set of commands in an overlay with a default action item [splitbutton](references/components/splitbutton.md)
 
