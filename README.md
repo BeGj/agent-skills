@@ -1,12 +1,13 @@
 # agent-skills
 
-A collection of [Agent Skills](https://github.com/vercel-labs/skills) for working with the NgRx ecosystem.
+A collection of [Agent Skills](https://github.com/vercel-labs/skills) for the Angular ecosystem.
 
 ## Skills
 
 | Skill | Description |
 | --- | --- |
 | [`ngrx-signals`](skills/ngrx-signals) | Build and review Angular state management with NgRx **SignalStore** (`@ngrx/signals`) — `signalStore`/`signalState`, `withState`/`withComputed`/`withMethods`, `patchState`, `rxMethod`/`signalMethod`, entities, the Events plugin, custom features, testing, `@ngrx/operators`, and the `@angular-architects/ngrx-toolkit` extensions. |
+| [`primeng`](skills/primeng) | Build and review Angular UIs with **PrimeNG** (v21) — a focused reference for all 90+ components and directives, plus `providePrimeNG` setup, `@primeuix/themes` theming/design tokens, dark mode, passthrough (`pt`)/unstyled, Tailwind integration, PrimeIcons, and the Message/Confirmation/Dialog services. |
 
 ## Install
 

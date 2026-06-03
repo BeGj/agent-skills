@@ -1,5 +1,6 @@
-# Claude Code local settings
+# Claude Code / agent-skills local install artifacts
 .claude/
+.agents/
 
 # OS / editor
 .DS_Store
